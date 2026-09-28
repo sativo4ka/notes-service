@@ -7,7 +7,7 @@
 
 ## 2. Dockerfile
 Файл `Dockerfile` создан вручную в корне проекта:
-```dockerfile
+
 FROM node:18-alpine
 WORKDIR /app
 COPY package.json .
@@ -19,7 +19,6 @@ CMD ["node", "server.js"]
 ## 3. Инструкция по сборке, запуску и проверке
 
 1. Сборка Docker-образа
-```bash
 docker build -t notes-service-app .
 
 2. Запуск контейнера
