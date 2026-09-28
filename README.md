@@ -15,3 +15,20 @@ RUN npm install
 COPY . .
 EXPOSE 8080
 CMD ["node", "server.js"]
+
+## 3. Инструкция по сборке, запуску и проверке
+
+1. Сборка Docker-образа
+```bash
+docker build -t notes-service-app .
+
+2. Запуск контейнера
+docker run -d -p 8080:8080 --name notes-container notes-service-app
+
+3. Проверка работоспособности
+Проверка запущенных контейнеров:
+docker ps
+Проверка логов контейнера:
+docker logs notes-container
+Запрос к API через браузер или curl:
+curl http://localhost:8080/notes
