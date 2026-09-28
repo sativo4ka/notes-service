@@ -40,7 +40,7 @@ docker run -d -p 8080:8080 --name notes-container notes-service-app
 <img width="800" height="328" alt="{83C25FCE-D4BB-4584-A158-A2662C9C7734}" src="https://github.com/user-attachments/assets/4e5121ed-035c-4e8d-a486-1c041396a91f" />
 
 
-Запрос к API через браузер:
+Запрос к API через браузер и curl:
 
 <img width="436" height="247" alt="{00DEA84E-ABD5-4380-AF84-647786AD77F4}" src="https://github.com/user-attachments/assets/4490f707-b75a-4c4a-995e-609e92d6cdaa" />
 <img width="1470" height="664" alt="{7BA3F3F0-7E72-4695-8B5A-A955068C36B1}" src="https://github.com/user-attachments/assets/0f7ec760-2f3d-4c58-87dc-7284b4ba63a8" />
