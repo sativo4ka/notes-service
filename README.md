@@ -1,4 +1,4 @@
-<img width="367" height="227" alt="{6D127B16-0AB9-4F94-9970-A999964CF639}" src="https://github.com/user-attachments/assets/858c03b8-36fa-4cdb-ab47-11ded9492e2d" /># Отчет по лабораторной работе: Контейнеризация Notes Service
+Отчет по лабораторной работе: Контейнеризация Notes Service
 
 ## 1. Исходный код API
 Проект содержит исходный код на Node.js:
