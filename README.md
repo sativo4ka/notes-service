@@ -30,5 +30,5 @@ docker run -d -p 8080:8080 --name notes-container notes-service-app
 docker ps
 Проверка логов контейнера:
 docker logs notes-container
-Запрос к API через браузер или curl:
+Запрос к API через браузер или
 curl http://localhost:8080/notes
