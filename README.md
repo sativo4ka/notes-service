@@ -7,7 +7,7 @@
 
 ## 2. Dockerfile
 Файл `Dockerfile` создан вручную в корне проекта:
-
+```dockerfile
 FROM node:18-alpine
 WORKDIR /app
 COPY package.json .
