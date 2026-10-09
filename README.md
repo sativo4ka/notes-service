@@ -45,4 +45,24 @@ docker run -d -p 8080:8080 --name notes-container notes-service-app
 <img width="436" height="247" alt="{00DEA84E-ABD5-4380-AF84-647786AD77F4}" src="https://github.com/user-attachments/assets/4490f707-b75a-4c4a-995e-609e92d6cdaa" />
 <img width="1470" height="664" alt="{7BA3F3F0-7E72-4695-8B5A-A955068C36B1}" src="https://github.com/user-attachments/assets/0f7ec760-2f3d-4c58-87dc-7284b4ba63a8" />
 
+## 4. Контрольная точка Compose
+# Notes Service API
 
+Сервис заметок на Node.js (Express) и PostgreSQL, упакованный в Docker Compose.
+
+## Запуск проекта
+1. `docker compose up -d --build`
+2. `docker compose ps`
+
+## Проверка CRUD (cURL)
+- **POST (Создать):** 
+  `curl -X POST http://localhost:8080/notes -H "Content-Type: application/json" -d "{\"title\": \"Test\", \"content\": \"Hello\"}"`
+- **GET (Получить все):** 
+  `curl -X GET http://localhost:8080/notes`
+- **PUT (Обновить):** 
+  `curl -X PUT http://localhost:8080/notes/1 -H "Content-Type: application/json" -d "{\"title\": \"Updated\", \"content\": \"New\"}"`
+- **DELETE (Удалить):** 
+  `curl -X DELETE http://localhost:8080/notes/1`
+
+## Логи
+`docker compose logs`
