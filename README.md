@@ -12,7 +12,8 @@
 ![C4 Container](docs/architecture/diagrams/c4-container.png)
 
 ### Level 3 — Component
-![C4 Component](docs/architecture/diagrams/c4-component.png)
+![Uploading image.png…]()
+
 
 Подробное описание компонентов, взаимодействия и обоснование Redis Cache: [docs/architecture/architecture.md](docs/architecture/architecture.md).
 
