@@ -10,9 +10,9 @@
 
 Система состоит из трёх микросервисов:
 
-- **NotesService** — создание, получение, изменение и удаление заметок.
-- **CategoriesService** — создание, получение, изменение и удаление категорий.
-- **SearchService** — поиск заметок по названию и содержимому. Для получения заметок обращается к NotesService по HTTP.
+- **NotesService** - создание, получение, изменение и удаление заметок.
+- **CategoriesService** - создание, получение, изменение и удаление категорий.
+- **SearchService** - поиск заметок по названию и содержимому. Для получения заметок обращается к NotesService по HTTP.
 
 Для хранения данных используется PostgreSQL 16.
 
@@ -31,15 +31,24 @@ NotesService и CategoriesService работают с базой данных ч
 
 ## 4. Структура проекта
 
-- `NotesService/` — микросервис управления заметками.
-- `CategoriesService/` — микросервис управления категориями.
-- `SearchService/` — микросервис поиска.
-- `NotesManagementSystem.slnx` — решение Visual Studio.
-- `docker-compose.yml` — конфигурация запуска контейнеров.
-- `C4_Context.drawio` — контекстная диаграмма.
-- `C4_Container.drawio` — диаграмма контейнеров.
-- `C4_Component.drawio` — диаграмма компонентов.
-- `docs/architecture/` — документация архитектуры.
+- `NotesService/` - микросервис управления заметками.
+- `CategoriesService/` - микросервис управления категориями.
+- `SearchService/` - микросервис поиска.
+- `NotesManagementSystem.slnx` - решение Visual Studio.
+- `docker-compose.yml` - конфигурация запуска контейнеров.
+- `C4_Context.drawio` - контекстная диаграмма.
+ 
+<img width="677" height="431" alt="image" src="https://github.com/user-attachments/assets/05ac3a33-80db-4307-a240-5965c4b95c08" />
+
+- `C4_Container.drawio` - диаграмма контейнеров.
+
+<img width="409" height="477" alt="image" src="https://github.com/user-attachments/assets/f5c4e4e1-28a5-491f-abe1-e6cd511a4df6" />
+
+- `C4_Component.drawio` - диаграмма компонентов.
+
+<img width="515" height="377" alt="image" src="https://github.com/user-attachments/assets/d2d63987-c047-4da7-b373-e887e4a3a15e" />
+
+- `docs/architecture/` - документация архитектуры.
 
 ## 5. Запуск проекта
 
