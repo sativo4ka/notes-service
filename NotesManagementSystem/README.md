@@ -1,4 +1,3 @@
-@'
 # Система управления заметками
 
 ## Описание проекта
@@ -11,9 +10,9 @@
 
 Проект состоит из трех микросервисов:
 
-1. **NotesService** — управление заметками (CRUD).
-2. **CategoriesService** — управление категориями (CRUD).
-3. **SearchService** — поиск заметок по названию и содержанию.
+1. **NotesService** - управление заметками(CRUD).
+2. **CategoriesService** - управление категориями(CRUD).
+3. **SearchService** - поиск заметок по названию и содержанию.
 
 Для хранения данных используется PostgreSQL. Микросервисы взаимодействуют друг с другом по HTTP.
 
@@ -29,14 +28,14 @@
 
 ## Структура проекта
 
-- `NotesService` — сервис заметок.
-- `CategoriesService` — сервис категорий.
-- `SearchService` — сервис поиска.
+- `NotesService` - сервис заметок.
+- `CategoriesService` - сервис категорий.
+- `SearchService` - сервис поиска.
 - `docker-compose.yml` — конфигурация запуска контейнеров.
-- `NotesManagementSystem.slnx` — файл решения Visual Studio.
-- `C4_Context.drawio` — контекстная диаграмма.
-- `C4_Container.drawio` — диаграмма контейнеров.
-- `C4_Component.drawio` — диаграмма компонентов.
+- `NotesManagementSystem.slnx` - файл решения Visual Studio.
+- `C4_Context.drawio` - контекстная диаграмма.
+- `C4_Container.drawio` - диаграмма контейнеров.
+- `C4_Component.drawio` - диаграмма компонентов.
 
 ## Запуск проекта
 
