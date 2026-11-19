@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="../CategoriesService/CategoriesService.csproj" />
-  <Project Path="../NotesService/NotesService.csproj" />
-  <Project Path="../SearchService/SearchService.csproj" />
-</Solution>
