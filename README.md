@@ -61,7 +61,7 @@ docker compose down
 - СУБД: PostgreSQL 16
 - База данных: notes_db
 - Таблицы: Notes, Categories
-- 
+
 ## Проверка работы
 
 Работа микросервисов проверяется через Swagger. SearchService получает список заметок от NotesService и выполняет поиск по названию и содержанию.
