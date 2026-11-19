@@ -1,36 +1,71 @@
-version: '3.8'
-
-services:
+﻿services:
   db:
     image: postgres:16
-    container_name: notes_db
+    container_name: notes_postgres
+    restart: unless-stopped
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: mysecretpassword
-      POSTGRES_DB: notesdb
-    volumes:
-      - db_data:/var/lib/postgresql/data
-    networks:
-      - notes_net
+      POSTGRES_DB: notes_db
+      POSTGRES_USER: notes_user
+      POSTGRES_PASSWORD: notes_password
     ports:
       - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U notes_user -d notes_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
-  api:
-    build: .
-    container_name: notes_api
+  notes-service:
+    build:
+      context: ./NotesService
+      dockerfile: Dockerfile
+    container_name: notes_service
+    restart: unless-stopped
     environment:
-      - DATABASE_URL=postgres://postgres:mysecretpassword@db:5432/notesdb
-      - PORT=8080
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: "Host=db;Port=5432;Database=notes_db;Username=notes_user;Password=notes_password"
     ports:
-      - "8080:8080"
+      - "8081:8080"
     depends_on:
-      - db
-    networks:
-      - notes_net
+      db:
+        condition: service_healthy
+
+  categories-service:
+    build:
+      context: ./CategoriesService
+      dockerfile: Dockerfile
+    container_name: categories_service
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: "Host=db;Port=5432;Database=notes_db;Username=notes_user;Password=notes_password"
+    ports:
+      - "8082:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  search-service:
+    build:
+      context: ./SearchService
+      dockerfile: Dockerfile
+    container_name: search_service
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      NotesServiceUrl: "http://notes-service:8080"
+    ports:
+      - "8083:8080"
+    depends_on:
+      - notes-service
 
 volumes:
   db_data:
+    external: true
+    name: projects_db_data
 
-networks:
-  notes_net:
-    driver: bridge
