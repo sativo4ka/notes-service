@@ -43,3 +43,26 @@
 
 ```bash
 docker compose up -d --build
+```
+
+## Остановка:
+
+```
+docker compose down
+```
+
+## Swagger
+
+- NotesService: http://localhost:8081/swagger
+- CategoriesService: http://localhost:8082/swagger
+- SearchService: http://localhost:8083/swagger
+- 
+## База данных
+- СУБД: PostgreSQL 16
+- База данных: notes_db
+- Таблицы: Notes, Categories
+- 
+## Проверка работы
+
+Работа микросервисов проверяется через Swagger. SearchService получает список заметок от NotesService и выполняет поиск по названию и содержанию.
+'@ | Set-Content -Encoding UTF8 .\README.md
