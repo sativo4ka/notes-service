@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="t5rboUd-32I6LUU9AtnO">
+    <mxGraphModel dx="1001" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Сервис заметок&lt;/div&gt;&lt;div&gt;NotesService&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Создание, просмотр,&lt;/div&gt;&lt;div&gt;изменение и удаление заметок&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="120" x="270" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Сервис категорий&lt;/div&gt;&lt;div&gt;CategoriesService&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Создание, просмотр,&lt;/div&gt;&lt;div&gt;изменение и удаление категорий&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="640" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-10" edge="1" parent="1" source="5lbvrcR_dRCKoByk9Kmj-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.414;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;" target="5lbvrcR_dRCKoByk9Kmj-1">
+          <mxGeometry relative="1" x="-0.0376" as="geometry" />
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-11" connectable="0" parent="5lbvrcR_dRCKoByk9Kmj-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="HTTP-запрос:&amp;nbsp;&lt;div&gt;получение списка заметок&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0711" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Сервис поиска&lt;/div&gt;&lt;div&gt;SearchService&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Поиск заметок&lt;/div&gt;&lt;div&gt;по названию и содержанию&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="470" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-5" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;div&gt;База данных&lt;/div&gt;&lt;div&gt;PostgreSQL&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Хранение заметок&lt;/div&gt;&lt;div&gt;и категорий&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="80" x="490" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-6" edge="1" parent="1" source="5lbvrcR_dRCKoByk9Kmj-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.013;entryY=0.633;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="5lbvrcR_dRCKoByk9Kmj-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-7" connectable="0" parent="5lbvrcR_dRCKoByk9Kmj-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Чтение и запись заметок" vertex="1">
+          <mxGeometry relative="1" x="0.1482" y="5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-8" edge="1" parent="1" source="5lbvrcR_dRCKoByk9Kmj-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.004;entryY=0.605;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="5lbvrcR_dRCKoByk9Kmj-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-9" connectable="0" parent="5lbvrcR_dRCKoByk9Kmj-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Чтение и запись категорий" vertex="1">
+          <mxGeometry relative="1" x="0.1732" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-13" edge="1" parent="1" source="5lbvrcR_dRCKoByk9Kmj-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="5lbvrcR_dRCKoByk9Kmj-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-16" connectable="0" parent="5lbvrcR_dRCKoByk9Kmj-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="&lt;p&gt;&lt;code dir=&quot;ltr&quot;&gt;Работа с заметками&lt;/code&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1797" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-14" edge="1" parent="1" source="5lbvrcR_dRCKoByk9Kmj-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-19" connectable="0" parent="5lbvrcR_dRCKoByk9Kmj-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="&lt;p&gt;&lt;code dir=&quot;ltr&quot;&gt;Поиск заметок&lt;/code&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0286" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Пользователь" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-15" edge="1" parent="1" source="5lbvrcR_dRCKoByk9Kmj-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.583;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="5lbvrcR_dRCKoByk9Kmj-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5lbvrcR_dRCKoByk9Kmj-18" connectable="0" parent="5lbvrcR_dRCKoByk9Kmj-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="&lt;p&gt;&lt;span&gt;Работа с категориями&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.4" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

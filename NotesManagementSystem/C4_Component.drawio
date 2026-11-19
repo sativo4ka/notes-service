@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="SNi-5Zn5Uoi6Bjj694F8">
+    <mxGraphModel dx="563" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XQx3m3bnFeDx-CkDJPNx-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;div&gt;Сервис заметок&lt;/div&gt;&lt;div&gt;NotesService&lt;/div&gt;" vertex="1">
+          <mxGeometry height="395" width="480" x="160" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="XQx3m3bnFeDx-CkDJPNx-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Контроллер заметок&lt;/div&gt;&lt;div&gt;NotesController&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Принимает HTTP-запросы&lt;/div&gt;&lt;div&gt;GET, POST, PUT, DELETE&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="155" x="180" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="XQx3m3bnFeDx-CkDJPNx-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Модель заметки&lt;/div&gt;&lt;div&gt;Note&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Id&lt;/div&gt;&lt;div&gt;Title&lt;/div&gt;&lt;div&gt;Content&lt;/div&gt;&lt;div&gt;CreatedAt&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="155" x="470" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="XQx3m3bnFeDx-CkDJPNx-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Контекст базы данных&lt;/div&gt;&lt;div&gt;NotesDbContext&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Связь приложения&lt;/div&gt;&lt;div&gt;с PostgreSQL&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="155" x="322.5" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="XQx3m3bnFeDx-CkDJPNx-5" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;div&gt;PostgreSQL&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Таблица Notes&lt;/div&gt;&lt;div&gt;Хранение заметок&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="80" x="720" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="XQx3m3bnFeDx-CkDJPNx-6" edge="1" parent="1" source="XQx3m3bnFeDx-CkDJPNx-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.065;entryY=0.409;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="XQx3m3bnFeDx-CkDJPNx-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XQx3m3bnFeDx-CkDJPNx-7" connectable="0" parent="XQx3m3bnFeDx-CkDJPNx-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="&lt;code&gt;Создание и&amp;nbsp;&lt;/code&gt;&lt;div&gt;&lt;code&gt;обработка заметок&lt;/code&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1705" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XQx3m3bnFeDx-CkDJPNx-9" edge="1" parent="1" source="XQx3m3bnFeDx-CkDJPNx-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.619;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="XQx3m3bnFeDx-CkDJPNx-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XQx3m3bnFeDx-CkDJPNx-10" connectable="0" parent="XQx3m3bnFeDx-CkDJPNx-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="&lt;code&gt;Вызов методов работы&amp;nbsp;&lt;/code&gt;&lt;div&gt;&lt;code&gt;с БД&lt;/code&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1219" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XQx3m3bnFeDx-CkDJPNx-13" edge="1" parent="1" source="XQx3m3bnFeDx-CkDJPNx-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="XQx3m3bnFeDx-CkDJPNx-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XQx3m3bnFeDx-CkDJPNx-14" connectable="0" parent="XQx3m3bnFeDx-CkDJPNx-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="&lt;code&gt;Чтение и запись&amp;nbsp;&lt;/code&gt;&lt;div&gt;&lt;code&gt;данных&lt;/code&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1414" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
