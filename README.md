@@ -38,7 +38,8 @@
 
 ```bash
 docker compose up -d --build
-Swagger
+```
+## Swagger
 - NotesService: http://localhost:8081/swagger
 - CategoriesService: http://localhost:8082/swagger
 - SearchService: http://localhost:8083/swagger
