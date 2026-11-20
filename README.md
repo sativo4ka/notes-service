@@ -36,6 +36,7 @@ NotesService и CategoriesService работают с базой данных ч
 - `SearchService/` - микросервис поиска.
 - `NotesManagementSystem.slnx` - решение Visual Studio.
 - `docker-compose.yml` - конфигурация запуска контейнеров.
+ 
 - `C4_Context.drawio` - контекстная диаграмма.
  
 <img width="677" height="431" alt="image" src="https://github.com/user-attachments/assets/05ac3a33-80db-4307-a240-5965c4b95c08" />
