@@ -70,9 +70,9 @@ docker compose ps
 
 После запуска документация API доступна по адресам:
 
-- NotesService: http://localhost:8081/swagger
-- CategoriesService: http://localhost:8082/swagger
-- SearchService: http://localhost:8083/swagger
+- NotesService: http://localhost:7269/swagger
+- CategoriesService: http://localhost:7127/swagger
+- SearchService: http://localhost:7222/swagger
 
 ## 7. Хранение данных
 
